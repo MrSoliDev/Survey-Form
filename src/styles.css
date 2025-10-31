@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #8ec5fc);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+#description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #444;
+  max-width: 600px;
+}
+
+form {
+  background-color: #ffffffcc;
+  backdrop-filter: blur(6px);
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #222;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4b7bec;
+  box-shadow: 0 0 0 3px rgba(75, 123, 236, 0.15);
+}
+
+p {
+  margin-top: 18px;
+  font-weight: 500;
+  color: #222;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+label input[type="radio"],
+label input[type="checkbox"] {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 22px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #4b7bec, #3867d6);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #3867d6, #4b7bec);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  #description {
+    font-size: 0.95rem;
+  }
+}
